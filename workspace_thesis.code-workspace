@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../../Downloads/Scripts (1)/Scripts"
 		}
 	],
 	"settings": {}
