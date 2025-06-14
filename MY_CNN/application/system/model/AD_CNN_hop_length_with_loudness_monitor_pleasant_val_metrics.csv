@@ -1,0 +1,1 @@
+epoch,val_event_auc,val_pleasant_mse,val_eventful_mse,val_chaotic_mse,val_vibrant_mse,val_uneventful_mse,val_calm_mse,val_annoying_mse,val_monotonous_mse
