@@ -88,12 +88,12 @@ def main(argv):
     print('uneventful_mse: %.3f' % float(uneventful_mse), 'calm_mse: %.3f' % float(calm_mse),
           'annoying_mse: %.3f' % float(annoying_mse), 'monotonous_mse: %.3f' % float(monotonous_mse))
 
-    # from ad_cnn_timing import measure_single_sample_inference_ad_cnn, print_timing_stats, warm_up_model_ad_cnn
+    from ad_cnn_timing import measure_single_sample_inference_ad_cnn, print_timing_stats, warm_up_model_ad_cnn
 
     # # After loading your AD_CNN model
-    # warm_up_model_ad_cnn(model, generator, cuda=config.cuda)
-    # timing_stats = measure_single_sample_inference_ad_cnn(model, generator, cuda=config.cuda, num_samples=100)
-    # print_timing_stats(timing_stats)
+    warm_up_model_ad_cnn(model, generator, cuda=config.cuda)
+    timing_stats = measure_single_sample_inference_ad_cnn(model, generator, cuda=config.cuda, num_samples=100)
+    print_timing_stats(timing_stats)
 
 #  Parameters num: 0.521472 M
 # ASC	Acc:  89.30 %
