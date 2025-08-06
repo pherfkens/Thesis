@@ -39,7 +39,9 @@ def run_jobs():
     # source_wav_path = r'C:\Users\pherfkens\OneDrive - Delft University of Technology\SoundSCaper\Feature_loudness_ISO532_1\Dataset_wav'
     source_wav_path = os.path.join(os.getcwd(), 'Dataset_wav')
 
-    output_feature_dir = source_path + "_mel_hop_320"
+    output_feature_dir = source_path + "_mel_hop_160"
+    # output_feature_dir = source_path + "_mel_hop_320" # Uncomment this line when using hop length of 320
+
     create_folder(output_feature_dir)
 
     mel_bins = 64
