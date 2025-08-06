@@ -1,3 +1,7 @@
+## Data Preparation  
+Before being able to get results, the right pickles have to be in the folders. So in /application/Dataset/Testing_set/ the files are currently dummy files. Replace those with the one in the zipfile.
+
+## Get testing results
 Run /application/Inference.py to get the test results of the final model.
 
 For example, running the Inference.py with the final model "final_model_AD_CNN_dense_layer_hop_combined_monitor_pleasant.pth", would give these results:
