@@ -2,7 +2,7 @@ Run /application/Inference.py to get the test results of the final model.
 
 For example, running the Inference.py with the final model "final_model_AD_CNN_dense_layer_hop_combined_monitor_pleasant.pth", would give these results:
 
-''' 
+'''python
 Number of 3576 audios in testing
 AEC     AUC:  0.83
 PAQ_8D_AQ       MSE MEAN: 1.114
