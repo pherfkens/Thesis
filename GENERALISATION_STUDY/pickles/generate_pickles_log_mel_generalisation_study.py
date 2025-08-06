@@ -57,21 +57,21 @@ def generate_feature_pickle(audio_id_path, npy_dir, out_pickle_path):
 # Paths for each dataset split
 DATASET_DIR = r"C:\Users\pepij\OneDrive - Delft University of Technology\SoundSCaper\ISD_SOUNDSCAPY"
 # MEL_FEATURE_DIR = 'Feature_log_mel/Dataset_hop_320_case_study_npy'
-# MEL_FEATURE_DIR = 'Feature_log_mel/Dataset_hop_160_case_study_npy'
+MEL_FEATURE_DIR = 'Feature_log_mel/Dataset_hop_160_case_study_npy'
 
 # LOUDNESS_FEATURE_DIR = r'C:\Users\pepij\OneDrive - Delft University of Technology\SoundSCaper\Feature_loudness_ISO532_1\Dataset_wav_loudness'
-LOUDNESS_FEATURE_DIR = r'C:\Users\pepij\OneDrive - Delft University of Technology\SoundSCaper\Feature_loudness_ISO532_1\Dataset_wav_loudness_case_study'
+# LOUDNESS_FEATURE_DIR = r'C:\Users\pepij\OneDrive - Delft University of Technology\SoundSCaper\Feature_loudness_ISO532_1\Dataset_wav_loudness_case_study'
 
-splits = ['']   # training, validation, test ADDED BY ME
+splits = ['training', 'validation', 'test']   
 for split in splits:
     split_dir = os.path.join(DATASET_DIR)
     audio_id_path = os.path.join(split_dir, f"{split}groupids_case_study.txt")
 
-    # mel_out = os.path.join(split_dir, f"{split}_hop_160_npy.pickle")
+    mel_out = os.path.join(split_dir, f"{split}_hop_160_npy.pickle")
     # mel_out = os.path.join(split_dir, f"{split}_hop_320_npy.pickle")
     # loud_out = os.path.join(split_dir, f"{split}_loudness_hop_320.pickle")
     # loud_out = os.path.join(split_dir, f"{split}_loudness.pickle")
-    loud_out = os.path.join(split_dir, f"{split}_loudness_case_study.pickle")
+    # loud_out = os.path.join(split_dir, f"{split}_loudness_case_study.pickle")
 
-    # generate_feature_pickle(audio_id_path, MEL_FEATURE_DIR, mel_out)
-    generate_feature_pickle(audio_id_path, LOUDNESS_FEATURE_DIR, loud_out)
+    generate_feature_pickle(audio_id_path, MEL_FEATURE_DIR, mel_out)
+    # generate_feature_pickle(audio_id_path, LOUDNESS_FEATURE_DIR, loud_out)
