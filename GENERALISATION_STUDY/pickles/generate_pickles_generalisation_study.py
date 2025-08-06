@@ -34,9 +34,9 @@ scene_label_dict = eval(data)
 def generate_paq_pickle(split_name, base_path):
     split_dir = os.path.join(base_path)
 
-    audio_ids = load_lines(os.path.join(split_dir, f"{split_name}groupids_case_study.txt"))
+    audio_ids = load_lines(os.path.join(split_dir, f"{split_name}groupids_generalisation_study.txt"))
     # scene_labels = load_lines(os.path.join(split_dir, f"{split_name}_set_acoustic_scene_labels.txt"))
-    paq_attrs = load_paq_attributes(os.path.join(split_dir, f"{split_name}paqs_case_study.txt"))
+    paq_attrs = load_paq_attributes(os.path.join(split_dir, f"{split_name}paqs_generalisation_study.txt"))
     # isopl, isoev = load_isopl_isoe(os.path.join(split_dir, f"{split_name}_set_ISOP_ISOE.txt"))
     # masker_lines = load_lines(os.path.join(split_dir, f"{split_name}_set_masker.txt"))
     # soundscapes_lines = load_lines(os.path.join(split_dir, f"{split_name}_set_soundscapes.txt"))
