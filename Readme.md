@@ -1,7 +1,7 @@
 # Repository for MSc Thesis Project on Predicting Soundscape Indices  
 This repository is because of the MSc Thesis Project which has contributed to designing very lightweight models, capable of deploying on low-cost, resource-constrained sensors. 
 
-## Reprodudability  
+## Reproducibility   
 Each folder contains a comprehensive README to reproduce the results.
 
 ## Thesis  
