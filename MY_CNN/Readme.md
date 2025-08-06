@@ -1,5 +1,5 @@
 ## Data Preparation  
-Before being able to get results, the right pickles have to be in the folders. So in /application/Dataset/Testing_set/ the files are currently dummy files. Replace those with the one in the zipfile.
+Before being able to get results, the right pickles have to be in the folders. So in /application/Dataset/Testing_set/ the files are currently dummy files. Replace those with the one in this zip file (around 3 GB): https://drive.google.com/file/d/1XhiqZEv4NwzSicZ9qanRvcsfdxahrQY0/view?usp=drive_link.
 
 ## Get testing results
 Run /application/Inference.py to get the test results of the final model.
